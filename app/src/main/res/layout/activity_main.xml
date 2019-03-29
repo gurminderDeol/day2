@@ -1,18 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:text="Login"
+        android:textSize="35sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/colorAccent"
+        android:drawableStart="@drawable/ic_action_name"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Enter Email Id"
+        android:inputType="textEmailAddress"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:ems="10"
+        android:hint="Enter Passsword"
+        android:inputType="textPassword"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/texterror"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        tools:text="Enter Message" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnsign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sign In" />
+
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear" />
+    </LinearLayout>
+</LinearLayout>
